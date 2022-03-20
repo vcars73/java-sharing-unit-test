@@ -5,17 +5,14 @@ server:
     whitelabel:
       enabled: false
 redis:
-  host: redis-13023.c245.us-east-1-3.ec2.cloud.redislabs.com
-  port: 13023
-  password: "agRukI9hajlXJ603cvNPZBKf3P2H265X"
+  host: localhost
+  port: 6379
 spring:
   application:
     name: unit-test
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://ec2-54-146-91-153.compute-1.amazonaws.com:5432/d2qnmp2a7rdkk4
-    username: jyqyzlawtqdxrd
-    password: 3e10895c838508f06606797f2bfcdfe8ccdba9db060f244095ce7a8249f9df3c
+    url: jdbc:postgresql://localhost:5432/postgres
   # JPA properties
   jpa:
     hibernate:
