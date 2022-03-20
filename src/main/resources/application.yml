@@ -29,7 +29,7 @@ unittest:
   session:
     expired:
       signing: 600
-      cooldown: 86400 #1 hari untuk expired
+      cooldown: 86400 #1 day
       catalog : 3600
   esb:
     masterData:
