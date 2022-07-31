@@ -1,18 +1,20 @@
 server:
-  port : 80
+  port : 8090
   error:
     include-message: always
     whitelabel:
       enabled: false
 redis:
-  host: localhost
-  port: 6379
+  host: redis-13426.c262.us-east-1-3.ec2.cloud.redislabs.com
+  port: 13426
+  username: default
+  password: GgtOND4d4vgaS64l7Ovu7L4coQXFJ5vZ
 spring:
   application:
     name: unit-test
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://ec2-44-206-197-71.compute-1.amazonaws.com:5432/ddtbq5hm8r561f?user=plfjnhkazkspyp&password=7e1e2a05b3a3648cff4243f95988dce85789b69734dfd138633189d29573034e
   # JPA properties
   jpa:
     hibernate:
